@@ -1,0 +1,6 @@
+)]}'
+{
+  "name": "aosp",
+  "clone_url": "https://chromium.googlesource.com/aosp",
+  "description": "Repos that are mirrored/forked directly from https://android.googlesource.com/"
+}

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <!-- Changelog -->
+ <id>https://hg.mozilla.org/hgcustom/hg_templates/</id>
+ <link rel="self" href="https://hg.mozilla.org/hgcustom/hg_templates/atom-log"/>
+ <link rel="alternate" href="https://hg.mozilla.org/hgcustom/hg_templates/"/>
+ <title>hg_templates Changelog</title>
+ <updated>2014-09-04T15:37:36-07:00</updated>
+
+ <entry>
+  <title>[default] Bug 1063184 - Migrate hg_templates repository into version-control-tools; a=laura</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-31fd65aa7c9915a62b1e7bc6206e729a6bc8f3fe</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/31fd65aa7c99"/>
+  <author>
+   <name>Gregory Szorc</name>
+   <email>&#103;&#112;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-09-04T15:37:36-07:00</updated>
+  <published>2014-09-04T15:37:36-07:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>31fd65aa7c99</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td>default</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td>tip</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#71;&#114;&#101;&#103;&#111;&#114;&#121;&#32;&#83;&#122;&#111;&#114;&#99;&#32;&#60;&#103;&#112;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1063184" title="Bug 1063184">Bug 1063184</a> - Migrate hg_templates repository into version-control-tools; a=laura<br/>
+<br/>
+Content from this repo now lives under the hgtemplates/ directory of<br/>
+<a href="https://hg.mozilla.org/hgcustom/version-control-tools/.">https://hg.mozilla.org/hgcustom/version-control-tools/.</a><br/>
+<br/>
+The content of this repository has been wiped and replaced with a README<br/>
+stating that.</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>.hgtags<br />README<br />atom/changelog.tmpl<br />atom/changelogentry.tmpl<br />atom/error.tmpl<br />atom/filelog.tmpl<br />atom/header.tmpl<br />atom/map<br />atom/pushlog.tmpl<br />atom/pushlogentry.tmpl<br /><br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 1051804 - Use |emailuser| rather than |user| for the annotate author</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-781a6d82af8c8439b07eaa83e4d84f355c8c95d9</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/781a6d82af8c"/>
+  <author>
+   <name>Ed Morley</name>
+   <email>&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-08-12T13:43:55+01:00</updated>
+  <published>2014-08-12T13:43:55+01:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>781a6d82af8c</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#69;&#100;&#32;&#77;&#111;&#114;&#108;&#101;&#121;&#32;&#60;&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1051804" title="Bug 1051804">Bug 1051804</a> - Use |emailuser| rather than |user| for the annotate author<br/>
+<br/>
+For legacy reasons, the 'user' filter incorrectly turns email addresses of form<br/>
+'a.b.surname@domain.org' into 'a'. Using 'emailuser' instead gives the entire<br/>
+part before the @, ie 'a.b.surname' - and so this patch means that on the hgweb<br/>
+annotate pages the author username shown for each line is less ambiguous.<br/>
+Requires Hg v2.2 or higher. See also: <a href="http://bz.selenic.com/show_bug.cgi?id=2276">http://bz.selenic.com/show_bug.cgi?id=2276</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/map<br />gitweb_mozilla_pvt/map<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 1037144 - add gaia-l10n/v2_0</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-d11c2df08779a852e247c4a16d9c6ccc6c18e954</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/d11c2df08779"/>
+  <author>
+   <name>Kendall Libby</name>
+   <email>&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-07-15T11:54:10-04:00</updated>
+  <published>2014-07-15T11:54:10-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>d11c2df08779</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#75;&#101;&#110;&#100;&#97;&#108;&#108;&#32;&#76;&#105;&#98;&#98;&#121;&#32;&#60;&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1037144" title="Bug 1037144">Bug 1037144</a> - add gaia-l10n/v2_0</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>removed v1_0_1 and v1_1</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-6c187529ddae1e6f280a3a81b14a0badb833ce66</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/6c187529ddae"/>
+  <author>
+   <name>Kendall Libby</name>
+   <email>&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-06-26T11:06:16-04:00</updated>
+  <published>2014-06-26T11:06:16-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>6c187529ddae</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#75;&#101;&#110;&#100;&#97;&#108;&#108;&#32;&#76;&#105;&#98;&#98;&#121;&#32;&#60;&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>removed v1_0_1 and v1_1</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 970457 - wrong href links</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-101569d2755a5d00e6d890e885c5327f4646dcd5</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/101569d2755a"/>
+  <author>
+   <name>Kendall Libby</name>
+   <email>&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-06-26T11:00:01-04:00</updated>
+  <published>2014-06-26T11:00:01-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>101569d2755a</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#75;&#101;&#110;&#100;&#97;&#108;&#108;&#32;&#76;&#105;&#98;&#98;&#121;&#32;&#60;&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=970457" title="Bug 970457">Bug 970457</a> - wrong href links</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 970457 - add gaia-l10n version links</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-87f7252cd359aab4037acd5a561bb6874b425499</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/87f7252cd359"/>
+  <author>
+   <name>Kendall Libby</name>
+   <email>&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-06-26T09:49:19-04:00</updated>
+  <published>2014-06-26T09:49:19-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>87f7252cd359</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#75;&#101;&#110;&#100;&#97;&#108;&#108;&#32;&#76;&#105;&#98;&#98;&#121;&#32;&#60;&#107;&#108;&#105;&#98;&#98;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=970457" title="Bug 970457">Bug 970457</a> - add gaia-l10n version links</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>add releases/gaia-l10n repositories in hg footer</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-c9eabbb3ec4777e36520eb0fe13105975789a2d6</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/c9eabbb3ec47"/>
+  <author>
+   <name>Ben Kero</name>
+   <email>&#98;&#107;&#101;&#114;&#111;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2014-02-10T11:56:47-08:00</updated>
+  <published>2014-02-10T11:56:47-08:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>c9eabbb3ec47</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#66;&#101;&#110;&#32;&#75;&#101;&#114;&#111;&#32;&#60;&#98;&#107;&#101;&#114;&#111;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>add releases/gaia-l10n repositories in hg footer</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 914693 - Update strings now that the merges are expanded by default; r=ted</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-4002538e425d6d157381967dc2408e10ac73a81b</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/4002538e425d"/>
+  <author>
+   <name>Ed Morley</name>
+   <email>&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2013-10-16T17:25:06+01:00</updated>
+  <published>2013-10-16T17:25:06+01:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>4002538e425d</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#69;&#100;&#32;&#77;&#111;&#114;&#108;&#101;&#121;&#32;&#60;&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914693" title="Bug 914693">Bug 914693</a> - Update strings now that the merges are expanded by default; r=ted</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/map<br />gitweb_mozilla_pvt/map<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 914693 - pushloghtml should show merges expanded by default rather than collapsed by default; r=ted</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-32eb0bbb32803e6bb01f6615901720fba054e59b</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/32eb0bbb3280"/>
+  <author>
+   <name>Ed Morley</name>
+   <email>&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2013-09-11T23:35:14+01:00</updated>
+  <published>2013-09-11T23:35:14+01:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>32eb0bbb3280</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#69;&#100;&#32;&#77;&#111;&#114;&#108;&#101;&#121;&#32;&#60;&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914693" title="Bug 914693">Bug 914693</a> - pushloghtml should show merges expanded by default rather than collapsed by default; r=ted</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/pushlog.tmpl<br />gitweb_mozilla_pvt/pushlog.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>merge hg_1_6+_updates branch</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-3eb5c8c73ff140bcfd89b9fad72847f7f73f72c0</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/3eb5c8c73ff1"/>
+  <author>
+   <name>Ted Mielczarek</name>
+   <email>&#116;&#101;&#100;&#64;&#109;&#105;&#101;&#108;&#99;&#122;&#97;&#114;&#101;&#107;&#46;&#111;&#114;&#103;</email>
+  </author>
+  <updated>2013-05-03T12:29:22-04:00</updated>
+  <published>2013-05-03T12:29:22-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>3eb5c8c73ff1</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#84;&#101;&#100;&#32;&#77;&#105;&#101;&#108;&#99;&#122;&#97;&#114;&#101;&#107;&#32;&#60;&#116;&#101;&#100;&#64;&#109;&#105;&#101;&#108;&#99;&#122;&#97;&#114;&#101;&#107;&#46;&#111;&#114;&#103;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>merge hg_1_6+_updates branch</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 766952 - Remove empty &lt;span&gt;s and switch per element styles to style-gitweb.css, to improve browser memory usage on large diffs; r=ted</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-aa5c47f0fb4f43de4de39a5ff8644a53550eeca6</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/aa5c47f0fb4f"/>
+  <author>
+   <name>Ed Morley</name>
+   <email>&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2012-07-24T12:25:54+01:00</updated>
+  <published>2012-07-24T12:25:54+01:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>aa5c47f0fb4f</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#69;&#100;&#32;&#77;&#111;&#114;&#108;&#101;&#121;&#32;&#60;&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=766952" title="Bug 766952">Bug 766952</a> - Remove empty &lt;span&gt;s and switch per element styles to style-gitweb.css, to improve browser memory usage on large diffs; r=ted</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/map<br />gitweb_mozilla_pvt/map<br />static/style-gitweb.css<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 774649 - Make the 'base' link on the file revisions page link to the former file's revision log, not file view; r=ted</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-b24811f15a92934559574b742d57e2ee27d5d5db</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/b24811f15a92"/>
+  <author>
+   <name>Ed Morley</name>
+   <email>&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2012-07-24T12:25:31+01:00</updated>
+  <published>2012-07-24T12:25:31+01:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>b24811f15a92</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#69;&#100;&#32;&#77;&#111;&#114;&#108;&#101;&#121;&#32;&#60;&#101;&#109;&#111;&#114;&#108;&#101;&#121;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=774649" title="Bug 774649">Bug 774649</a> - Make the 'base' link on the file revisions page link to the former file's revision log, not file view; r=ted</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/map<br />gitweb_mozilla_pvt/map<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>updating the annotateline in map per bug 466018</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-672340227bea89044387a09ed010e455dc7899b4</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/672340227bea"/>
+  <author>
+   <name>Corey Shields</name>
+   <email>&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2012-01-13T12:36:08-05:00</updated>
+  <published>2012-01-13T12:36:08-05:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>672340227bea</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#114;&#101;&#121;&#32;&#83;&#104;&#105;&#101;&#108;&#100;&#115;&#32;&#60;&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>updating the annotateline in map per <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=466018" title="Bug 466018">bug 466018</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/map<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>escaping opening curly braces due to changes in hgweb 1.6 for hg_pvt templates</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-f097760fef0ec693314f873540fc68719586f862</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/f097760fef0e"/>
+  <author>
+   <name>Corey Shields</name>
+   <email>&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2012-01-13T12:32:01-05:00</updated>
+  <published>2012-01-13T12:32:01-05:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>f097760fef0e</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#114;&#101;&#121;&#32;&#83;&#104;&#105;&#101;&#108;&#100;&#115;&#32;&#60;&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>escaping opening curly braces due to changes in hgweb 1.6 for hg_pvt templates</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla_pvt/graph.tmpl<br />gitweb_mozilla_pvt/header.tmpl<br />gitweb_mozilla_pvt/pushlog.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>escaping opening curly braces due to changes in hgweb 1.6 for ecmascript templates</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-d97322ad7bea40b4afabfd47feeedbf0b56f8713</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/d97322ad7bea"/>
+  <author>
+   <name>Corey Shields</name>
+   <email>&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2012-01-13T12:27:45-05:00</updated>
+  <published>2012-01-13T12:27:45-05:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>d97322ad7bea</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#114;&#101;&#121;&#32;&#83;&#104;&#105;&#101;&#108;&#100;&#115;&#32;&#60;&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>escaping opening curly braces due to changes in hgweb 1.6 for ecmascript templates</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_ecma/graph.tmpl<br />gitweb_ecma/header.tmpl<br />gitweb_ecma/pushlog.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>escaping opening curly braces due to changes in hgweb 1.6</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-9144832ef34109b4579569ae0e42c4a75ea7150e</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/9144832ef341"/>
+  <author>
+   <name>Corey Shields</name>
+   <email>&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2012-01-13T12:17:19-05:00</updated>
+  <published>2012-01-13T12:17:19-05:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>9144832ef341</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#114;&#101;&#121;&#32;&#83;&#104;&#105;&#101;&#108;&#100;&#115;&#32;&#60;&#99;&#115;&#104;&#105;&#101;&#108;&#100;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>escaping opening curly braces due to changes in hgweb 1.6</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/graph.tmpl<br />gitweb_mozilla/header.tmpl<br />gitweb_mozilla/pushlog.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>[hg_1_6+_updates] bug 666870 - Update Mozilla templates to work with new Mercurial templater. r=ted</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-68902204d68b46be4435440fa095972eb511a8ea</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/68902204d68b"/>
+  <author>
+   <name>Dirkjan Ochtman</name>
+   <email>&#100;&#105;&#114;&#107;&#106;&#97;&#110;&#64;&#111;&#99;&#104;&#116;&#109;&#97;&#110;&#46;&#110;&#108;</email>
+  </author>
+  <updated>2011-08-24T11:29:00-04:00</updated>
+  <published>2011-08-24T11:29:00-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>68902204d68b</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td>hg_1_6+_updates</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#68;&#105;&#114;&#107;&#106;&#97;&#110;&#32;&#79;&#99;&#104;&#116;&#109;&#97;&#110;&#32;&#60;&#100;&#105;&#114;&#107;&#106;&#97;&#110;&#64;&#111;&#99;&#104;&#116;&#109;&#97;&#110;&#46;&#110;&#108;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=666870" title="Bug 666870">bug 666870</a> - Update Mozilla templates to work with new Mercurial templater. r=ted</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/graph.tmpl<br />gitweb_mozilla/header.tmpl<br />gitweb_mozilla/pushlog.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Update gitweb_mozilla/index.tmpl per Bug 663966 to add releases/l10n/mozilla-release</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-aebc5445f05f2a44a397c099f7ca87eea981bd47</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/aebc5445f05f"/>
+  <author>
+   <name>Noah Meyerhans</name>
+   <email>&#110;&#109;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2011-06-13T21:59:16-07:00</updated>
+  <published>2011-06-13T21:59:16-07:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>aebc5445f05f</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#78;&#111;&#97;&#104;&#32;&#77;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#32;&#60;&#110;&#109;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>Update gitweb_mozilla/index.tmpl per <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=663966" title="Bug 663966">Bug 663966</a> to add releases/l10n/mozilla-release</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Add the /integration toplevel directory per Bug 661627</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-a3dbdeaaad863d9895cd2d99bde9b5363e8e811f</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/a3dbdeaaad86"/>
+  <author>
+   <name>Noah Meyerhans</name>
+   <email>&#110;&#109;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2011-06-06T16:10:01-07:00</updated>
+  <published>2011-06-06T16:10:01-07:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>a3dbdeaaad86</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#78;&#111;&#97;&#104;&#32;&#77;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#32;&#60;&#110;&#109;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>Add the /integration toplevel directory per <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=661627" title="Bug 661627">Bug 661627</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Revert the previous change per</title>
+  <id>https://hg.mozilla.org/hgcustom/hg_templates/#changeset-166c1b77d87f5f328a38f144df4cb8e3d7505de7</id>
+  <link href="https://hg.mozilla.org/hgcustom/hg_templates/rev/166c1b77d87f"/>
+  <author>
+   <name>Noah Meyerhans</name>
+   <email>&#110;&#109;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2011-05-17T11:48:03-07:00</updated>
+  <published>2011-05-17T11:48:03-07:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>166c1b77d87f</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#78;&#111;&#97;&#104;&#32;&#77;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#32;&#60;&#110;&#109;&#101;&#121;&#101;&#114;&#104;&#97;&#110;&#115;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>Revert the previous change per<br/>
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=657424#c4">https://bugzilla.mozilla.org/show_bug.cgi?id=657424#c4</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>gitweb_mozilla/index.tmpl<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+
+</feed>

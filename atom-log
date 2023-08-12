@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <!-- Changelog -->
+ <id>https://hg.mozilla.org/hgcustom/version-control-tools/</id>
+ <link rel="self" href="https://hg.mozilla.org/hgcustom/version-control-tools/atom-log"/>
+ <link rel="alternate" href="https://hg.mozilla.org/hgcustom/version-control-tools/"/>
+ <title>version-control-tools Changelog</title>
+ <updated>2023-06-28T14:39:31+00:00</updated>
+
+ <entry>
+  <title>[default] robustcheckout: retry on HTTP 5xx (Bug 1481291) r=sheehan</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-7436689a409528730ee6a7a2a5e763c9fb821a8f</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/7436689a4095"/>
+  <author>
+   <name>Julien Cristau</name>
+   <email>&#106;&#99;&#114;&#105;&#115;&#116;&#97;&#117;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-06-28T14:39:31+00:00</updated>
+  <published>2023-06-28T14:39:31+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>7436689a4095</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td>default</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td>@</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td>tip</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#74;&#117;&#108;&#105;&#101;&#110;&#32;&#67;&#114;&#105;&#115;&#116;&#97;&#117;&#32;&#60;&#106;&#99;&#114;&#105;&#115;&#116;&#97;&#117;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>robustcheckout: retry on HTTP 5xx (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1481291" title="Bug 1481291">Bug 1481291</a>) r=sheehan<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D182008">https://phabricator.services.mozilla.com/D182008</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgext/robustcheckout/__init__.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>hgweb: add `comm-esr115` to various repo lists (Bug 1837443)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-1cffc24fb8dc2911ff676c80cb470539b8dc89c0</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/1cffc24fb8dc"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-06-09T13:26:24-04:00</updated>
+  <published>2023-06-09T13:26:24-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>1cffc24fb8dc</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>hgweb: add `comm-esr115` to various repo lists (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1837443" title="Bug 1837443">Bug 1837443</a>)</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgwsgi/releases/hgweb.config<br />pylib/mozautomation/mozautomation/repository.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>mozautomation: add `mozilla-esr115` to mozautomation repo lists (Bug 1836075)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-28c45811b3a1993036741c343bff199829111f63</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/28c45811b3a1"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-06-01T10:48:08-04:00</updated>
+  <published>2023-06-01T10:48:08-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>28c45811b3a1</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>mozautomation: add `mozilla-esr115` to mozautomation repo lists (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836075" title="Bug 1836075">Bug 1836075</a>)</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>pylib/mozautomation/mozautomation/repository.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>unified: add `mozilla-esr115` to mozilla-unified (Bug 1836075)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-a5b1d88b44f778f76f825b89caef0675064efbb2</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/a5b1d88b44f7"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-06-01T10:47:48-04:00</updated>
+  <published>2023-06-01T10:47:48-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>a5b1d88b44f7</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>unified: add `mozilla-esr115` to mozilla-unified (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836075" title="Bug 1836075">Bug 1836075</a>)</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>ansible/roles/hg-ssh/files/unify-mozilla-unified.ini<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>hgweb: add `mozilla-esr115` to hgweb wsgi config (Bug 1836075)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-e9cb7b1457ff21cb4ef0f261edbe0dea65f214a7</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/e9cb7b1457ff"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-06-01T10:47:24-04:00</updated>
+  <published>2023-06-01T10:47:24-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>e9cb7b1457ff</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>hgweb: add `mozilla-esr115` to hgweb wsgi config (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836075" title="Bug 1836075">Bug 1836075</a>)</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgwsgi/releases/hgweb.config<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>bundles: add `mozilla-esr115` to bundle repo list (Bug 1836075)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-ebe1b737a1c2d1b401a0fb8a2c388348b51bc05c</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/ebe1b737a1c2"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-06-01T10:47:01-04:00</updated>
+  <published>2023-06-01T10:47:01-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>ebe1b737a1c2</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>bundles: add `mozilla-esr115` to bundle repo list (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1836075" title="Bug 1836075">Bug 1836075</a>)</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>ansible/roles/hg-ssh/files/bundle-repos<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>testing: install Mercurial 6.4.3 in test suite</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-59ee851d4c8e065be72ac79f24a7dafe159c6226</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/59ee851d4c8e"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-05-31T17:28:06-04:00</updated>
+  <published>2023-05-31T17:28:06-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>59ee851d4c8e</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>testing: install Mercurial 6.4.3 in test suite</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>testing/vcttesting/environment.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 1835706 - Make robustcheckout compatible with mercurial 6.4. r=sheehan</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-65ac4b5986df17916a94801e1880a3c3a0b4676b</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/65ac4b5986df"/>
+  <author>
+   <name>Mike Hommey</name>
+   <email>&#109;&#104;&#64;&#103;&#108;&#97;&#110;&#100;&#105;&#117;&#109;&#46;&#111;&#114;&#103;</email>
+  </author>
+  <updated>2023-05-30T20:43:51+00:00</updated>
+  <published>2023-05-30T20:43:51+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>65ac4b5986df</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#77;&#105;&#107;&#101;&#32;&#72;&#111;&#109;&#109;&#101;&#121;&#32;&#60;&#109;&#104;&#64;&#103;&#108;&#97;&#110;&#100;&#105;&#117;&#109;&#46;&#111;&#114;&#103;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1835706" title="Bug 1835706">Bug 1835706</a> - Make robustcheckout compatible with mercurial 6.4. r=sheehan<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D179391">https://phabricator.services.mozilla.com/D179391</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgext/robustcheckout/__init__.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>merge-day: fix typo in new file name (Bug 1831886)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-25b007354439445dca021c96a23e9a009624e7b6</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/25b007354439"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-05-08T13:23:19-04:00</updated>
+  <published>2023-05-08T13:23:19-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>25b007354439</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>merge-day: fix typo in new file name (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1831886" title="Bug 1831886">Bug 1831886</a>)</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hghooks/mozhghooks/check/merge_day.py<br />hghooks/tests/test-merge-day.t<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>merge-day: rename `constants.js` to `constants.sys.js` (Bug 1831886)</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-fe0bbf9a8cbc466ef931516ad7af98447691b2b0</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/fe0bbf9a8cbc"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-05-08T10:40:54-04:00</updated>
+  <published>2023-05-08T10:40:54-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>fe0bbf9a8cbc</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>merge-day: rename `constants.js` to `constants.sys.js` (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1831886" title="Bug 1831886">Bug 1831886</a>)<br/>
+<br/>
+This file was renamed recently and the rename must be reflected in<br/>
+the merge-day hook to allow `ffxbld-merge` to update the file<br/>
+programmatically.</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hghooks/mozhghooks/check/merge_day.py<br />hghooks/tests/test-merge-day.t<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>Bug 1831346 - Add Sean Feng to the list of DOM peers in the WebIDL hook. r=sheehan</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-7427aa4fc31b71999fbd13cb449103dea89645b9</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/7427aa4fc31b"/>
+  <author>
+   <name>Peter Van der Beken</name>
+   <email>&#112;&#101;&#116;&#101;&#114;&#118;&#64;&#112;&#114;&#111;&#112;&#97;&#103;&#97;&#110;&#100;&#105;&#115;&#109;&#46;&#111;&#114;&#103;</email>
+  </author>
+  <updated>2023-05-05T14:38:23+00:00</updated>
+  <published>2023-05-05T14:38:23+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>7427aa4fc31b</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#80;&#101;&#116;&#101;&#114;&#32;&#86;&#97;&#110;&#32;&#100;&#101;&#114;&#32;&#66;&#101;&#107;&#101;&#110;&#32;&#60;&#112;&#101;&#116;&#101;&#114;&#118;&#64;&#112;&#114;&#111;&#112;&#97;&#103;&#97;&#110;&#100;&#105;&#115;&#109;&#46;&#111;&#114;&#103;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1831346" title="Bug 1831346">Bug 1831346</a> - Add Sean Feng to the list of DOM peers in the WebIDL hook. r=sheehan<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D177168">https://phabricator.services.mozilla.com/D177168</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hghooks/mozhghooks/check/prevent_webidl_changes.py<br />hghooks/tests/test-prevent-webidl-changes.t<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>hgwsgi: disallow crawling hg.mozilla.org (Bug 1830926) r=glob</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-92956b1d1b4ce5e5971c0e5f622384ef0ac2341a</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/92956b1d1b4c"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-05-02T18:06:55+00:00</updated>
+  <published>2023-05-02T18:06:55+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>92956b1d1b4c</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>hgwsgi: disallow crawling hg.mozilla.org (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1830926" title="Bug 1830926">Bug 1830926</a>) r=glob<br/>
+<br/>
+Crawling on hg.mozilla.org has become a more and more frequent<br/>
+problem in recent memory. This commit changes the `robots.txt`<br/>
+file to be fully restrictive, except for the main landing<br/>
+page and other pages which only list the existing repositories<br/>
+on hg.mozilla.org.<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D176928">https://phabricator.services.mozilla.com/D176928</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgwsgi/robots.txt<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>testing: update &quot;pushlog compatible&quot; hg version in `test-mozext.t`</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-3e51fbd00ddc9fc6d777e080ec4b39025d2eb272</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/3e51fbd00ddc"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-04-04T22:16:27-04:00</updated>
+  <published>2023-04-04T22:16:27-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>3e51fbd00ddc</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>testing: update &quot;pushlog compatible&quot; hg version in `test-mozext.t`<br/>
+<br/>
+`$PUSHLOGHG` is a variable that points to a pushlog-compatible<br/>
+version of Mercurial in the test suite for use. Update to the<br/>
+actual version in use since we removed the previous version<br/>
+from the test environment.</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgext/mozext/tests/test-mozext.t<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>mozext: wrap `hg.peer` to try tree shortnames since `_peerorrepo` is deprecated (Bug 1826402) r=zeid,glob</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-8cedd43db1340b35ef6fad17a3261b635250d69d</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/8cedd43db134"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-04-05T14:10:55+00:00</updated>
+  <published>2023-04-05T14:10:55+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>8cedd43db134</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>mozext: wrap `hg.peer` to try tree shortnames since `_peerorrepo` is deprecated (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1826402" title="Bug 1826402">Bug 1826402</a>) r=zeid,glob<br/>
+<br/>
+Interestingly `mozext` and `firefoxtree` do the same thing here.<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D174709">https://phabricator.services.mozilla.com/D174709</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgext/mozext/__init__.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>firefoxtree: wrap `hg.peer` to try tree shortnames since `_peerorrepo` is deprecated (Bug 1824417) r=dholbert</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-97c4e1397bef7c040fe242f867a4b1898c597dff</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/97c4e1397bef"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-04-04T18:08:39+00:00</updated>
+  <published>2023-04-04T18:08:39+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>97c4e1397bef</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>firefoxtree: wrap `hg.peer` to try tree shortnames since `_peerorrepo` is deprecated (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1824417" title="Bug 1824417">Bug 1824417</a>) r=dholbert<br/>
+<br/>
+`_peerorrepo` is deprecated in Mercurial 6.4 and the functionality is moved to<br/>
+separate functions for creating peer and repo objects. Add a wrapper around<br/>
+`hg.peer` that accomplishes the same functionality for Mercurial 6.4+.<br/>
+<br/>
+Also rename our local `peerorrepo` to `wrapped_peerorrepo` to match the<br/>
+convention used elsewhere.<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D173568">https://phabricator.services.mozilla.com/D173568</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgext/firefoxtree/__init__.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>pash: limit public repo search to 1-2 levels of depth (Bug 1825810) r=jcristau,zeid</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-c16a1e23ffb026758a1d2c88195d62c158c8fffd</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/c16a1e23ffb0"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-04-04T16:04:43+00:00</updated>
+  <published>2023-04-04T16:04:43+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>c16a1e23ffb0</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>pash: limit public repo search to 1-2 levels of depth (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1825810" title="Bug 1825810">Bug 1825810</a>) r=jcristau,zeid<br/>
+<br/>
+The glob pattern `**/.hg` searches all directories recursively causing a<br/>
+hang in the terminal due to the depth of the filesystem. In reality<br/>
+we only want to search 1-2 levels deep, so change to using two more<br/>
+restricted patterns instead.<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D174307">https://phabricator.services.mozilla.com/D174307</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgserver/pash/hg_helper.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>testing: install hg 6.4 in test suite and remove unsupported versions</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-cdc573d780a5d5f72ca3b2dc6ca3c43a1e446586</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/cdc573d780a5"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-03-24T14:08:01-04:00</updated>
+  <published>2023-03-24T14:08:01-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>cdc573d780a5</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>testing: install hg 6.4 in test suite and remove unsupported versions</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>testing/vcttesting/environment.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>robustcheckout: handle socket.timeout exceptions and retry (bug 1823992) r=sheehan</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-46c99d31ab1491ca430bd6e62329766fd828f2a1</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/46c99d31ab14"/>
+  <author>
+   <name>Julien Cristau</name>
+   <email>&#106;&#99;&#114;&#105;&#115;&#116;&#97;&#117;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-03-22T20:37:48+00:00</updated>
+  <published>2023-03-22T20:37:48+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>46c99d31ab14</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#74;&#117;&#108;&#105;&#101;&#110;&#32;&#67;&#114;&#105;&#115;&#116;&#97;&#117;&#32;&#60;&#106;&#99;&#114;&#105;&#115;&#116;&#97;&#117;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>robustcheckout: handle socket.timeout exceptions and retry (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1823992" title="Bug 1823992">bug 1823992</a>) r=sheehan<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D173300">https://phabricator.services.mozilla.com/D173300</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hgext/robustcheckout/__init__.py<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>ansible: remove application of `docker` ansible role</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-ab63b8bcf01857caebe3505d58bdc4ae93552bcc</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/ab63b8bcf018"/>
+  <author>
+   <name>Connor Sheehan</name>
+   <email>&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-03-20T22:10:01-04:00</updated>
+  <published>2023-03-20T22:10:01-04:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>ab63b8bcf018</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#67;&#111;&#110;&#110;&#111;&#114;&#32;&#83;&#104;&#101;&#101;&#104;&#97;&#110;&#32;&#60;&#115;&#104;&#101;&#101;&#104;&#97;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>ansible: remove application of `docker` ansible role<br/>
+<br/>
+We never used this and it's failing during deployments,<br/>
+so remove it for now.</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>ansible/roles/hg-ssh/meta/main.yml<br />ansible/roles/hg-web/meta/main.yml<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+ <entry>
+  <title>hooks: implement repo locked commits (Bug 1820756) r=sheehan</title>
+  <id>https://hg.mozilla.org/hgcustom/version-control-tools/#changeset-0698b50509207444b454efe037f9c900e0167cb3</id>
+  <link href="https://hg.mozilla.org/hgcustom/version-control-tools/rev/0698b5050920"/>
+  <author>
+   <name>Andreas Pehrson</name>
+   <email>&#97;&#112;&#101;&#104;&#114;&#115;&#111;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;</email>
+  </author>
+  <updated>2023-03-14T22:31:16+00:00</updated>
+  <published>2023-03-14T22:31:16+00:00</published>
+  <content type="xhtml">
+   <table xmlns="http://www.w3.org/1999/xhtml">
+    <tr>
+     <th style="text-align:left;">changeset</th>
+     <td>0698b5050920</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">branch</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">bookmark</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">tag</th>
+     <td></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;">user</th>
+     <td>&#65;&#110;&#100;&#114;&#101;&#97;&#115;&#32;&#80;&#101;&#104;&#114;&#115;&#111;&#110;&#32;&#60;&#97;&#112;&#101;&#104;&#114;&#115;&#111;&#110;&#64;&#109;&#111;&#122;&#105;&#108;&#108;&#97;&#46;&#99;&#111;&#109;&#62;</td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">description</th>
+     <td>hooks: implement repo locked commits (<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1820756" title="Bug 1820756">Bug 1820756</a>) r=sheehan<br/>
+<br/>
+Differential Revision: <a href="https://phabricator.services.mozilla.com/D172067">https://phabricator.services.mozilla.com/D172067</a></td>
+    </tr>
+    <tr>
+     <th style="text-align:left;vertical-align:top;">files</th>
+     <td>hghooks/mozhghooks/check/prevent_repolocked_commits.py<br />hghooks/mozhghooks/extension.py<br />hghooks/tests/test-prevent-repolocked.t<br /></td>
+    </tr>
+   </table>
+  </content>
+ </entry>
+
+</feed>
